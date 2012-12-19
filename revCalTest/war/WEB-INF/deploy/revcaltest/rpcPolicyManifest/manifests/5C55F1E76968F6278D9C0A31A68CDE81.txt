@@ -1,0 +1,2 @@
+serviceClass: com.revcal.test.client.GreetingService
+path: 320B7F650A9A833685FD30BA922139B0.gwt.rpc
