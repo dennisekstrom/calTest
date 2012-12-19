@@ -26,8 +26,8 @@ public class BlockCalGrid extends Composite {
 	public BlockCalGrid(BlockCalAttributes attributes) {
 
 		// important stuff
-		initWidget(grid);
-		
+		super.initWidget(grid);
+
 		/* TODO TEMP */
 		this.setStyleName("temp");
 		/* ********* */
@@ -44,6 +44,7 @@ public class BlockCalGrid extends Composite {
 
 		// horizontal lines
 		SimplePanel block;
+		// TODO is this compatible with all browsers?
 		String blockHeight = attributes.getPixelsPerTimeInterval()
 				- BlockCalAttributes.HORIZONTAL_BORDER_WIDTH + "px";
 		int workingHoursStart = attributes.getWorkingHoursStart();
@@ -73,6 +74,7 @@ public class BlockCalGrid extends Composite {
 		}
 
 		// vertical lines
+		// TODO is this compatible with all browsers?
 		String blockWidth = attributes.getPixelsPerDay() - BlockCalAttributes.VERTICAL_BORDER_WIDTH
 				+ "px";
 		for (int day = 0; day < attributes.getNumDays(); day++) {
