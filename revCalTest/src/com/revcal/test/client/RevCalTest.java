@@ -11,6 +11,7 @@ public class RevCalTest implements EntryPoint {
 	/**
 	 * This is the entry point method.
 	 */
+	@Override
 	public void onModuleLoad() {
 		final BlockCalGrid blockCal = new BlockCalGrid(BlockCalAttributes.DEFAULT_ATTRIBUTES);
 

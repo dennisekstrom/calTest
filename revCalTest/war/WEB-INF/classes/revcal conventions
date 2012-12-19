@@ -1,0 +1,10 @@
+Konventioner
+
+Cal = Calendar
+
+Ett EventBlock är en AbsolutePanel (för inre kalender) med någon panel som overlay (för text).
+
+Exempel:
+Event - innehåller real-world info om events
+blockCal.EventAdapter - översätter real-world parametrar till grafiska parametrar i en BlockCal
+blockCal.EventBlock - den grafiska delen, en panel enligt ovan.
